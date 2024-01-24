@@ -1,0 +1,27 @@
+/* Reset some default styles for cross-browser consistency */
+#press {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+/* Custom styling for the button */
+#press {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #2980b9;
+}
+
+/* Hover effect */
+#press:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.1); 
+}

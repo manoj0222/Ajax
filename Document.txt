@@ -1,0 +1,57 @@
+Ajax(Asynchronous Javascript and XML):-
+Defination:-
+ It is just technology used to load/post data in webPage,without loading the entire webPage in a webApplication.
+
+Why?
+->It is used to load the data of webPage without reload of webPage.
+->We can make Get/Post even after webPage got loaded.
+->We can update a porition of webPage.
+
+How?
+It use in Built Browser Object called XMLHttpRequest object.
+Use JavaScript DOM(Document object Model) to show the content.
+
+
+
+Workflow:-
++-----------------------+    +-----------------------+       +-----------------------+  
+|      User Action      |    |    Web Application    |       |                       |  
+| (e.g., Click a Button)|    |                       |       |   Server-Side Code    |  
++-----------------------+    +-----------------------+       |    (Java, Servlet,    |  
+         |                             |                     |     Spring, etc.)     |   
++-----------------------+    +-----------------------+       |                       |  
+|    JavaScript Code    |    |  Ajax Request Setup   |       |                       |  
+|   (Triggers Ajax)     |    |    (e.g., URL, Data)  |       |                       |  
++-----------------------+    +-----------------------+       |                       |  
+         |                             |                     |                       |  
++-----------------------+    +-----------------------+       |                       |  
+|  Send Ajax Request    |    | Server-Side Processing|       |                       |  
+|   to Server           |    | of Ajax Request Logic |       |                       |  
++-----------------------+    +-----------------------+       |                       |  
+         |                             |                     |                       |  
++-----------------------+    +-----------------------+       |                       |  
+|   Send Response to    |    | JavaScript Processes  |       |                       |    
+|   JavaScript (JSON)   |    |     Response          |       |                       | 
++-----------------------+    +-----------------------+       |                       |  
+         |                             |                     |                       |      
++-----------------------+    +-----------------------+       |                       |
+| JavaScript Processes  |    | Update DOM or Perform |       |                       |
+|     Response          |    | Actions with Response |       |                       |
++-----------------------+    +-----------------------+       +-----------------------+  
+						    
+
+Methods and Instances used in Ajax Calling:-
+new XMLHttpRequest()               -->    Creates a new XMLHttpRequest object
+getAllResponseHeaders()            -->    Returns header information
+getResponseHeader()                -->    Returns specific header information
+open(method,url,async,user,psw)    -->    method: the request type GET or POST
+                                          url: the file location
+                                          async: true (asynchronous) or false (synchronous)
+                                          user: optional user name
+                                          psw: optional password
+send()                             -->    Sends the request to the server Used for GET requests
+send(string)                       -->    Sends the request to the server Used for POST requests
+
+
+
+
